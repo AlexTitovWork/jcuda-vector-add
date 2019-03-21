@@ -5,6 +5,9 @@ package app.jcuda.vector.add;
  * http://www.jcuda.org
  *
  * Copyright 2011 Marco Hutter - http://www.jcuda.org
+ * @updated by Alex Titov
+ * @e-mail alexeytitovwork@gmail.com
+ * @science 22.03.2019   
  */
 import static jcuda.driver.JCudaDriver.*;
 
