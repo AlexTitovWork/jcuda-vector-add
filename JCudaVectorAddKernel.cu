@@ -1,9 +1,12 @@
 extern "C"
-__global__ void add(int n, float *a, float *b, float *sum)
+
+/*Vector additional ketnel*/
+__global__ void add(int N, float *vectorA, float *vectorB, float *resultC)
 {
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
-    if (i<n)
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;
+	/*Limit of operation*/
+    if (i<N)
     {
-        sum[i] = a[i] + b[i];
+        resultC[idx] = vectorA[idx] + vectorB[idx];
     }
 }
