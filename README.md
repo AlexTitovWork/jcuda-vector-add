@@ -1,7 +1,7 @@
 # jcuda-vector-add
 <b>Base project for test and run CUDA kernel in java environment</b>
 <br>Project - template
-<br>to start java developing on CUDA
+<br>It is start  java developing on CUDA 
 <br>The project have dependence form jcuda library and other java libs
 <br>
 <br>The core file "JCudaVectorAddKernel.cu" includes a procedure for adding vectors.
