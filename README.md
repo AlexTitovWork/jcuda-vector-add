@@ -1,14 +1,14 @@
 # jcuda-vector-add
-base project for test and run cuda kernel in java environment
-Project pattern
-to start developing on CUDA
-uses jcuda library and other jcuda dependences
+<b>Base project for test and run CUDA kernel in java environment</b>
+<br>Project - template
+<br>to start java developing on CUDA
+<br>The project have dependence form jcuda library and other java libs
+<br>
+<br>The core file "JCudaVectorAddKernel.cu" includes a procedure for adding vectors.
+<br>c[i] = a[i] + b[i]
+<br>it is ecvivalent
+<br>resultC[idx] = vectorA[idx] + vectorB[idx]
 
-The core file "JCudaVectorAddKernel.cu" includes a procedure for adding vectors.
-c[i] = a[i] + b[i]
-it is ecvivalent
-resultC[idx] = vectorA[idx] + vectorB[idx]
-
-nvcc compiller generate JCudaVectorAddKernel.ptx file.
-This file envelope in java function.
+<br><b>nvcc</b> compiller generate JCudaVectorAddKernel.ptx file.
+<br>This file envelope in java function.
 
