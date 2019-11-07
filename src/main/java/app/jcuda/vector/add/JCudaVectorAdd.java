@@ -36,9 +36,6 @@ public class JCudaVectorAdd
         // Enable exceptions and omit all subsequent error checks
         JCudaDriver.setExceptionsEnabled(true);
 
-        
-        
-        
 // Create the PTX file by calling the NVCC
         String ptxFileName = preparePtxFile("JCudaVectorAddKernel.cu");
         File ptxFile = new File(ptxFileName);
@@ -59,7 +56,7 @@ public class JCudaVectorAdd
         CUfunction function = new CUfunction();
         cuModuleGetFunction(function, module, "add");
 
-        int numElements = 100000;
+        int numElements = 10000;
 
         // Allocate and fill the host input data
         float hostInputA[] = new float[numElements];
