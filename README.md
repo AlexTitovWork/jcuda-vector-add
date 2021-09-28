@@ -10,6 +10,7 @@
 <br>resultC[idx] = vectorA[idx] + vectorB[idx]
 
 <br><b>nvcc</b> compiller generate JCudaVectorAddKernel.ptx file.
+<br>The PTX assembler does not use nvcc, it only uses the linker in a low access virtual machine. For example, in a Java project, we can use ptx directly in the <br>code, we just compile PTX file before running.
 <br> About PTX here: https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#syntax
 <br>This file envelope in java function.
 
