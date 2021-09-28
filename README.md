@@ -10,5 +10,6 @@
 <br>resultC[idx] = vectorA[idx] + vectorB[idx]
 
 <br><b>nvcc</b> compiller generate JCudaVectorAddKernel.ptx file.
+<br> About PTX here: https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#syntax
 <br>This file envelope in java function.
 
